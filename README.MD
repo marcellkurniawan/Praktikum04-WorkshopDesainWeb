@@ -26,7 +26,6 @@ Sebuah proyek halaman web statis portofolio yang dikembangkan sebagai tugas prak
 
 ## 📸 Tangkapan Layar (Screenshot)
 
-_(Tambahkan path gambar screenshot halaman web Anda di sini)_
 ![Screenshot Web Profil](landing-page.png)
 
 ## 👨‍💻 Penulis
