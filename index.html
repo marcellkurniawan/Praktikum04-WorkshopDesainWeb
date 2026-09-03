@@ -4,273 +4,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Diri | Marcellino Putra Kurniawan</title>
+    <title>TechNova - Solusi Teknologi Digital</title>
     <style>
         body {
-            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-            background-color: #f4f6f8;
-            color: #333333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f7f6;
+            /* HEX */
+            color: rgb(51, 51, 51);
+            /* RGB */
             line-height: 1.6;
         }
 
-        .container {
-            max-width: 750px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 30px;
-            border-top: 5px solid #004ea2;
-            border-bottom: 5px solid #fcc800;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 6px;
-        }
-
         header {
+            background: linear-gradient(135deg, hsl(210, 100%, 25%), hsl(220, 80%, 40%));
+            /* HSL & Gradient */
+            color: white;
+            /* Named Color */
+            padding: 40px 20px;
             text-align: center;
-            border-bottom: 1px solid #eeeeee;
-            padding-bottom: 15px;
         }
 
-        h1 {
-            color: #004ea2;
-            margin-bottom: 5px;
-        }
-
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: #004ea2;
-            margin-top: 20px;
-            margin-bottom: 8px;
-        }
-
-        h3 {
-            color: #444444;
+        header img.logo {
+            max-width: 150px;
+            border-radius: 20%;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            /* RGBA */
+            margin-bottom: 10px;
         }
 
         nav {
-            background-color: #004ea2;
-            padding: 10px;
-            text-align: center;
-            border-radius: 4px;
-            margin: 15px 0 25px;
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
-            color: #ffffff !important;
-            margin: 0 10px;
+            color: white;
             text-decoration: none;
+            margin: 0 20px;
             font-weight: bold;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #fcc800 !important;
-            text-decoration: underline;
+            color: #f39c12;
+            /* HEX */
         }
 
-        .profile-pic {
-            display: block;
-            margin: 15px auto;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 3px solid #fcc800;
-            background-color: #e0e0e0;
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            color: rgb(0, 102, 204);
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 250px;
             object-fit: cover;
-            object-position: center 5%;
+            border-radius: 8px;
+            margin: 15px 0;
         }
 
-        .highlight {
-            background-color: #fff2a8;
-            padding: 2px 6px;
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
 
-        #special-note {
-            border-left: 4px solid #004ea2;
-            padding-left: 12px;
-            font-style: italic;
-            background-color: #f9fbfd;
+        textarea {
+            resize: none;
         }
 
-        ul {
-            list-style-type: square;
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
         }
 
-        a {
-            color: #004ea2;
-            text-decoration: none;
+        th {
+            background-color: rgb(0, 102, 204);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
             font-weight: bold;
         }
 
-        a:hover {
-            color: #fcc800;
-            text-decoration: underline;
-        }
-
-        pre {
-            background-color: #272822;
-            color: #f8f8f2;
-            padding: 12px;
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
             border-radius: 4px;
-            overflow-x: auto;
-            font-size: 13px;
         }
 
-        blockquote {
-            background: #f0f4f8;
-            border-left: 5px solid #004ea2;
-            margin: 15px 0;
-            padding: 10px 15px;
-            font-style: italic;
-        }
-
-        fieldset {
-            border: 1px solid #cccccc;
+        button {
+            background-color: hsl(120, 60%, 40%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
             border-radius: 4px;
-            padding: 15px;
-            margin-top: 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: hsl(120, 60%, 30%);
         }
 
         footer {
+            background-color: #1a252f;
+            color: #bdc3c7;
             text-align: center;
-            margin-top: 30px;
-            padding-top: 15px;
-            border-top: 1px solid #eeeeee;
-            font-size: 14px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .services-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            flex: 1;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid rgb(0, 102, 204);
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin: 15px 0 10px;
+            font-size: 18px;
+        }
+
+        .service-card p {
+            padding: 0 15px 20px;
             color: #666666;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive CSS */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .table-responsive {
+                overflow-x: auto;
+            }
         }
     </style>
 </head>
 
 <body>
 
+    <header id="home">
+        <img src="./images/TechNova-logo.png" alt="Logo TechNova" class="logo">
+        <p>Inovasi Digital untuk Ekosistem Bisnis Masa Depan</p>
+    </header>
+
+    <!-- Bagian Navigasi dengan tautan internal -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#kontak">Hubungi Kami</a>
+    </nav>
+
     <div class="container">
-        <!-- 1 & 3. Header Semantik & Heading 1 -->
-        <header>
-            <img src="Marcellino Putra Kurniawan.jpg" alt="Avatar Marcellino Putra Kurniawan" class="profile-pic"
-                width="180" height="180">
-            <h1>Marcellino Putra Kurniawan</h1>
-            <p style="color: #666666; font-size: 14px;">Mahasiswa Politeknik Elektronika Negeri Surabaya | D3 PJJ Teknik
-                Informatika Angkatan 2026</p>
-        </header>
 
-        <!-- 2 & 3. Navigasi & Elemen Semantik -->
-        <nav>
-            <a href="#profil">Profil</a> |
-            <a href="#akademik">Akademik</a> |
-            <a href="#minat">Minat</a> |
-            <a href="#kontak">Kontak</a>
-        </nav>
+        <!-- Bagian Daftar Fitur / Keunggulan & Gambar Produk -->
+        <section id="tentang">
+            <h2>Tentang Kami</h2>
+            <p>TechNova adalah perusahaan teknologi berkembang yang berfokus pada transformasi digital. Kami merancang
+                solusi web dan mobile app yang disesuaikan dengan kebutuhan unik setiap klien.</p>
 
-        <main>
-            <!-- Bagian 1: Informasi Diri -->
-            <section id="profil">
-                <h2>Informasi Pribadi</h2>
-                <p>
-                    Halo! Perkenalkan nama saya <b>Marcellino Putra Kurniawan</b>. Saya adalah mahasiswa aktif di
-                    <mark>Politeknik Elektronika Negeri Surabaya (PENS)</mark>.
-                </p>
-                <p class="highlight">
-                    Fokus pembelajaran saya saat ini mencakup <abbr title="HyperText Markup Language">HTML</abbr>5,
-                    pengembangan web modern, dan logika pemrograman.
-                </p>
-            </section>
+            <h3>Mengapa Memilih Kami?</h3>
+            <ul>
+                <li><strong>Tim Ahli:</strong> Didukung oleh developer dan desainer UI/UX profesional.</li>
+                <li><strong>Skalabilitas Tinggi:</strong> Infrastruktur cloud yang siap bertumbuh bersama bisnis Anda.
+                </li>
+                <li><strong>Dukungan 24/7:</strong> Layanan pemeliharaan sistem purna jual tanpa henti.</li>
+            </ul>
+        </section>
 
-            <!-- Menambahkan Garis Horizontal Berformat -->
-            <hr noshade>
+        <!-- Bagian Layanan / Produk Utama -->
+        <section id="produk">
+            <h2>Produk & Layanan Utama</h2>
+            <p>Kami menghadirkan solusi teknologi komprehensif untuk mendukung pertumbuhan bisnis Anda:</p>
 
-            <!-- Bagian 2: Data Akademik -->
-            <section id="akademik">
-                <h3>Data Akademik Mahasiswa</h3>
-                <p id="special-note">
-                    Saat ini saya sedang menempuh studi jenjang <i>D3 PJJ Teknik Informatika</i>,
-                    <ins>Angkatan 2026</ins>. Nomor Registrasi Pokok (<abbr title="Nomor Registrasi Pokok">NRP</abbr>)
-                    saya adalah <strong>3126510020</strong>.
-                </p>
+            <div class="services-grid">
+                <!-- Kotak 1: Software Development -->
+                <div class="service-card">
+                    <img src="./images/software-development.jpg" alt="Ilustrasi Software Development">
+                    <h3>Software Development</h3>
+                    <p>Pengembangan perangkat lunak kustom berkinerja tinggi untuk kebutuhan spesifik perusahaan Anda.
+                    </p>
+                </div>
 
-                <!-- Demonstrasi Level Heading Lengkap (4, 5, 6) -->
-                <h4>Detail Struktur Kelas</h4>
-                <h5>Mata Kuliah: Workshop Desain Web</h5>
-                <h6>Status: Mahasiswa Aktif Semester 1</h6>
-            </section>
+                <!-- Kotak 2: Cloud Computing -->
+                <div class="service-card">
+                    <img src="./images/cloud-computing.webp" alt="Ilustrasi Cloud Computing">
+                    <h3>Cloud Computing</h3>
+                    <p>Infrastruktur awan yang aman, cepat, dan mudah diskalakan untuk penyimpanan dan komputasi data.
+                    </p>
+                </div>
 
-            <hr size="3" color="#004ea2">
+                <!-- Kotak 3: IT Consulting -->
+                <div class="service-card">
+                    <img src="./images/it-consultant.png" alt="Ilustrasi IT Consulting">
+                    <h3>IT Consulting & Strategy</h3>
+                    <p>Konsultasi arsitektur IT untuk memandu dan mengakselerasi transformasi digital bisnis Anda.</p>
+                </div>
+            </div>
+        </section>
 
-            <!-- Bagian 3: Hobi & Kutipan -->
-            <section id="minat">
-                <h2>Hobi dan Minat</h2>
-                <p>Di waktu luang, saya memiliki beberapa hobi yang sering ditekuni:</p>
-                <ul>
-                    <li>Gym &amp; Kebugaran <sub>(Level konsistensi: H<sub>2</sub>O rutin)</sub></li>
-                    <li>Membaca Buku &amp; Dokumentasi Teknis</li>
-                    <li>Bermain Basket <sup>(Olahraga favorit #1)</sup></li>
-                    <li><del>Rebahan seharian</del> Eksplorasi Coding <code>console.log("Hello World!");</code></li>
-                </ul>
+        <!-- Bagian Tabel Layanan / Harga -->
+        <section id="layanan">
+            <h2>Paket Layanan Kami</h2>
+            <p>Pilih solusi yang paling tepat untuk skala bisnis Anda:</p>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jenis Paket</th>
+                            <th>Fitur Utama</th>
+                            <th>Estimasi Waktu</th>
+                            <th>Harga (Mulai dari)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Startup Basic</strong></td>
+                            <td>Landing Page, Hosting 1GB, Domain .com</td>
+                            <td>1 Minggu</td>
+                            <td>Rp 2.500.000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Corporate Pro</strong></td>
+                            <td>Web Company Profile, CMS, SEO Basic</td>
+                            <td>3 Minggu</td>
+                            <td>Rp 7.000.000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>E-Commerce Max</strong></td>
+                            <td>Katalog Produk, Payment Gateway, Dashboard Admin</td>
+                            <td>1.5 Bulan</td>
+                            <td>Rp 15.000.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-                <p>Prinsip belajar saya dirangkum dalam kutipan singkat: <q>Konsistensi mengalahkan bakat yang tidak
-                        diasah.</q></p>
-
-                <!-- Paragraf dengan Preformatted Text & Blockquote -->
-                <p>Cuplikan kode inisialisasi dasar:</p>
-                <pre>
-&lt;!-- Setup Boilerplate --&gt;
-function initPortfolio() {
-    return "Status: Ready!";
-}
-                </pre>
-
-                <blockquote cite="https://www.pens.ac.id">
-                    "Pendidikan vokasi memberikan keahlian praktis dan kesiapan langsung dalam industri teknologi
-                    modern."
-                </blockquote>
-            </section>
-
-            <hr>
-
-            <!-- Bagian 4: Sidebar/Aside & Kontak -->
-            <aside>
-                <h2>Tautan Portofolio</h2>
-                <p>
-                    Kunjungi tautan eksternal untuk meninjau proyek saya:<br>
-                    Website: <a href="https://marcellkurniawan.github.io" target="_blank"
-                        title="Kunjungi Website Pribadi">marcellkurniawan.github.io</a><br>
-                    GitHub: <a href="https://github.com/marcellkurniawan" target="_blank"
-                        title="Kunjungi Profil GitHub">marcellkurniawan</a>
-                </p>
-            </aside>
-
-            <!-- Bagian Form Lengkap Sesuai Materi Elemen HTML -->
-            <section id="kontak">
-                <h2>Kirim Pesan</h2>
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Formulir Kontak</legend>
-                        <p>
-                            <label for="nama">Nama:</label><br>
-                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"
-                                style="width: 95%; padding: 6px; margin-top: 4px;">
-                        </p>
-                        <p>
-                            <label for="pesan">Pesan:</label><br>
-                            <textarea id="pesan" name="pesan" rows="3" placeholder="Tuliskan pesan..."
-                                style="width: 95%; padding: 6px; margin-top: 4px;"></textarea>
-                        </p>
-                        <button type="submit"
-                            style="padding: 8px 16px; background-color: #004ea2; color: white; border: none; border-radius: 4px; cursor: pointer;">Kirim</button>
-                        <button type="button" disabled style="padding: 8px 16px;">Draft</button>
-                    </fieldset>
-                </form>
-            </section>
-        </main>
-
-        <!-- Elemen Semantik Footer -->
-        <footer>
-            <p>&copy; 2026 Marcellino Putra Kurniawan | <small>Dibuat menggunakan HTML5 &amp; CSS3</small></p>
-        </footer>
+        <!-- Bagian Formulir Kontak -->
+        <section id="kontak">
+            <h2>Hubungi Kami</h2>
+            <p>Apakah Anda siap memulai proyek digital Anda? Kirimkan pesan kepada kami melalui form di bawah ini.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Aktif:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@perusahaan.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="kebutuhan">Kebutuhan Proyek:</label>
+                    <select id="kebutuhan" name="kebutuhan"
+                        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="software_development">Software Development</option>
+                        <option value="cloud">Cloud Computing</option>
+                        <option value="consultant">IT Consultant & Strategy</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Detail Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="5" placeholder="Ceritakan ide proyek Anda..."
+                        required></textarea>
+                </div>
+                <button type="submit">Kirim Penawaran</button>
+            </form>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2026 TechNova Digital Solutions. All Rights Reserved.</p>
+        <p>Ikuti kami di:
+            <a href="#" style="color: #4da6ff; text-decoration: none; margin: 0 5px;">LinkedIn</a> |
+            <a href="#" style="color: #4da6ff; text-decoration: none; margin: 0 5px;">Twitter</a> |
+            <a href="#" style="color: #4da6ff; text-decoration: none; margin: 0 5px;">Instagram</a>
+        </p>
+    </footer>
 
 </body>
 

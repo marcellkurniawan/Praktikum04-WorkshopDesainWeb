@@ -1,32 +1,44 @@
-# Profil Diri | HTML Fundamentals
+# Company Profile & HTML Elements | Praktikum Modul 02
 
-Sebuah proyek halaman web statis portofolio yang dikembangkan sebagai tugas praktikum **Modul 01: HTML Dasar** pada mata kuliah **Workshop Desain Web**. Proyek ini mendemonstrasikan implementasi kerangka dasar web menggunakan elemen semantik yang terstruktur, rapi, dan fungsional.
+Sebuah proyek halaman web statis _Company Profile_ yang dikembangkan sebagai tugas praktikum **Modul 02: HTML Dasar (Lanjutan)** pada mata kuliah **Workshop Desain Web**. Proyek ini memperluas pemahaman elemen HTML dengan mengintegrasikan sistem navigasi lanjutan, tabel data, daftar bertingkat, formulir interaktif, serta implementasi format warna CSS.
 
 ## 🚀 Fitur Utama
 
-- **Struktur Semantik HTML5:** Penggunaan tag `<header>`, `<nav>`, `<main>`, `<section>`, `<aside>`, dan `<footer>` untuk aksesibilitas dan SEO yang lebih baik.
-- **Hierarki Konten (Headings):** Penataan judul menggunakan `<h1>` hingga `<h6>` secara berurutan.
-- **Pemformatan Teks Komprehensif:** Penerapan berbagai variasi tipografi seperti `<b>`, `<i>`, `<mark>`, `<sub>`, `<sup>`, hingga `<del>` dan `<ins>`.
-- **Navigasi Internal:** Tautan _anchor_ (`href="#id"`) yang memungkinkan pengguna melompat ke bagian spesifik pada halaman (Profil, Akademik, Minat, Kontak).
-- **Formulir Interaktif:** Simulasi form kontak menggunakan `<form>`, `<fieldset>`, `<input>`, `<textarea>`, dan `<button>`.
-- **CSS Internal Styling:** Modifikasi antarmuka visual dasar langsung di dalam tag `<style>`, mencakup tata letak _container_, modifikasi warna korporat, _box-shadow_, dan tata letak gambar profil.
+- **Tautan & Gambar Interaktif:** Penerapan tautan eksternal, tautan internal (_anchor_), tautan email, tautan telepon, serta manajemen gambar dengan atribut alternatif (`alt`).
+- **Tabel Data Komprehensif:** Pembuatan tabel terstruktur menggunakan `<thead>`, `<tbody>`, `<tfoot>`, serta penggabungan sel menggunakan `colspan` dan `rowspan`.
+- **Daftar Bersarang (Nested & Definition Lists):** Penggunaan _unordered list_, _ordered list_ bertingkat, serta _definition list_ untuk pengelompokan informasi.
+- **Formulir Lanjutan:** Perancangan form pendaftaran lengkap menggunakan _input text_, _email_, _password_, _date_, _radio button_, _checkbox_, _dropdown select_, dan _textarea_ yang dikelompokkan dalam `<fieldset>`.
+- **Sistem Pewarnaan CSS:** Eksplorasi representasi warna menggunakan _Named Colors_, _HEX codes_, _RGB_, _HSL_, transparansi dengan _RGBA_, serta gradasi warna (_linear_ dan _radial_).
+- **Desain Responsif:** Penyesuaian tata letak menggunakan Flexbox dan _Media Queries_ agar optimal di berbagai ukuran layar.
 
 ## 🛠️ Teknologi yang Digunakan
 
-- **HTML5** (Struktur Utama)
-- **CSS3** (Internal Styling)
+- **HTML5** (Struktur Dokumen)
+- **CSS3** (Internal Styling & Responsive Layout)
 
-## 📁 Struktur Navigasi Halaman
+## 📁 Struktur Navigasi Halaman (Company Profile)
 
-1. **Informasi Pribadi:** Perkenalan singkat dan fokus pembelajaran.
-2. **Data Akademik:** Detail status mahasiswa dan program studi.
-3. **Hobi dan Minat:** Daftar aktivitas menggunakan _unordered list_ (`<ul>`).
-4. **Tautan Portofolio:** Tautan eksternal ke website pribadi dan GitHub.
-5. **Kirim Pesan:** _Form_ sederhana untuk demonstrasi elemen input.
+1. **Header & Logo:** Identitas perusahaan (_TechNova_) beserta logo visual.
+2. **Navigasi Internal:** Menu tautan cepat untuk berpindah antar seksi halaman.
+3. **Tentang Kami & Produk:** Penjelasan profil perusahaan beserta daftar keunggulan dan kartu layanan (_Software Development_, _Cloud Computing_, _IT Consulting_).
+4. **Paket Layanan:** Tabel perbandingan fitur dan harga produk/layanan.
+5. **Formulir Kontak:** Wadah interaktif bagi klien untuk mengirimkan penawaran atau pesan.
 
-## 📸 Tangkapan Layar (Screenshot)
+## 📸 Tangkapan Layar (Screenshot Tampilan)
 
-![Screenshot Web Profil](landing-page.png)
+Berikut adalah pratinjau tampilan halaman web pada berbagai perangkat:
+
+### 1. Tampilan PC (Desktop View)
+
+![Tampilan PC](screenshot-pc.png)
+
+### 2. Tampilan Tablet (Tablet View)
+
+![Tampilan Tablet](screenshot-tab.png)
+
+### 3. Tampilan Mobile (Smartphone View)
+
+![Tampilan Mobile](screenshot-mobile.png)
 
 ## 👨‍💻 Penulis
 
@@ -38,4 +50,4 @@ Sebuah proyek halaman web statis portofolio yang dikembangkan sebagai tugas prak
 
 ---
 
-_Dibuat untuk memenuhi tugas praktikum 1 Workshop Desain Web (Semester 1)._
+_Dibuat untuk memenuhi tugas praktikum 2 Workshop Desain Web (Semester 1)._
