@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/PJJ TI PENS/TUGAS SEMESTER 1/WORKSHOP WEB DESAIN/TUGAS 2 (02-09-2026)/PRAKTIKUM",
+      "program": "d:/PJJ TI PENS/TUGAS SEMESTER 1/WORKSHOP WEB DESAIN/TUGAS 2 (02-09-2026)/PRAKTIKUM/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
